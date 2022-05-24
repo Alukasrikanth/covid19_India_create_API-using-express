@@ -1,0 +1,39 @@
+GET http://localhost:3000/states/
+
+###
+
+GET http://localhost:3000/states/1/
+
+###
+
+GET http://localhost:3000/districts/2/
+
+###
+POST http://localhost:3000/districts/
+Content-Type:application/json
+
+{
+  "districtId": 322,
+  "districtName": "Haveri",
+  "stateId": 36,
+  "cases": 2816,
+  "cured": 2424,
+  "active": 172,
+  "deaths": 220,
+
+}
+
+###
+DELETE http://localhost:3000/districts/1/
+
+###
+PUT http://localhost:3000/districts/2/
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
